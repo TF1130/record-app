@@ -1,0 +1,17 @@
+<div>ようこそ！</div>
+<%= link_to image_tag("publicdomainq-0036908emc.jpg", class:"rec"), "/" %>
+<h1>レコーディングダイエット</h1>
+<ul>新規投稿
+<% @records.each do |record|%>
+  <div>
+   <%= record.breakfast %>
+   <%= record.lunch %>
+   <%= record.dinner %>
+   <%= record.coffeebreak %>
+  </div>
+<% end %>
+<%= link_to '新規投稿', records_new_path %> 
+<li>卵かけご飯
+</li>
+</ul>
+</div>
