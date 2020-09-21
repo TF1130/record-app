@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 2020_09_15_101935) do
     t.string "lunch"
     t.string "dinner"
     t.string "coffeebreak"
+    t.date "date"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

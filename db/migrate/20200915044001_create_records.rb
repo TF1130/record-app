@@ -5,6 +5,7 @@ class CreateRecords < ActiveRecord::Migration[6.0]
       t.string :lunch
       t.string :dinner
       t.string :coffeebreak
+      t.date :date
       t.timestamps
     end
   end
