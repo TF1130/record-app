@@ -3,4 +3,50 @@
   color: red;
   width: 100px;
   height: 100px;
+  background-color: blue;
+}
+.reco {
+  margin: 1vh 0;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vh;
+}
+
+.date-week {
+  height: 5vh;
+  display: flex;
+  font-size: 3vh;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* border-bottom: medium solid rgb(0, 0, 0); */
+}
+
+.record-form {
+  font-size: 10px;
+  width: 30vw;
+  /* border: solid 1px #666666; */
+  /* display: flex; */
+  /* align-items: baseline; */
+  /* justify-content: space-around; */
+}
+
+.record-main {
+  width: auto;
+  /* border: solid black 1px; */
+}
+
+.delete-bottun {
+  background-color: brown;
+}
+
+.content {
+  min-height: 25vh;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: scroll;
+  border: darkblue solid 1px;
 }
