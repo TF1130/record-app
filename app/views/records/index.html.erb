@@ -1,17 +1,34 @@
 <div>ようこそ！</div>
 <%= link_to image_tag("publicdomainq-0036908emc.jpg", class:"rec"), "/" %>
-<h1>レコーディングダイエット</h1>
-<ul>新規投稿
-<% @records.each do |record|%>
-  <div>
-   <%= record.breakfast %>
-   <%= record.lunch %>
-   <%= record.dinner %>
-   <%= record.coffeebreak %>
-  </div>
+<h1>レコーディングダイエット/食事管理アプリ</h1>
+<%= form_with model: @record, url: records_path, method: :post,local: true do |f| %>
+  <%= f.date_field :date %><br>
+  <%= f.text_area :record, placeholder: "入力" %>
+  <%= f.text_area :breakfast, placeholder: "朝食を入力" %><br>
+  <%= f.text_area :lunch, placeholder: "昼食を入力" %><br>
+  <%= f.text_area :dinner, placeholder: "夕食を入力"%><br>
+  <%= f.text_area :coffeebreak, placeholder: "間食を入力" %>
+  <%= f.submit '投稿する'%>
 <% end %>
-<%= link_to '新規投稿', records_new_path %> 
-<li>卵かけご飯
-</li>
-</ul>
+
+<div class='date-week'>
+ <% @week_days.each do |day| %>
+  <div class='record-form'>
+   <%= day[:month] %>月<%= day[:date] %>日<%=day[:wday] %>
+    <div class='record-main'>
+     <%# <%= link_to '新規投稿', records_path %>
+       <ul>
+         <% if day[:records].length != 0 %>
+          <li> <%= day[:records].each do |record| %></li>
+           <li>朝食 <%= record.breakfast %></li>
+           <li>昼食 <%= record.lunch %></li>
+           <li>夕食 <%= record.dinner %></li>
+           <li>間食 <%= record.coffeebreak %></li>
+           <%= link_to '削除', record_path(record.id), method: :delete %>
+           <%# <%= link_to '詳細', record_path(record.id), method: :show %>
+          <% end %>
+         <% end %>
+       </ul>
+    </div>
+ <% end %>
 </div>
