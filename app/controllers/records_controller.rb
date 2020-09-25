@@ -6,20 +6,14 @@ class RecordsController < ApplicationController
 
   def new
     @record = Record.new(records_params)
-    if @record.save(records_params)
-      redirect_to root_path
-    end
-
+    redirect_to root_path if @record.save(records_params)
   end
 
-  def update
-
-  end
+  def update; end
 
   def show
     @record = Record.new(records_params)
     @record = Record.find(params[:id])
-
   end
 
   def index
@@ -36,11 +30,11 @@ class RecordsController < ApplicationController
   private
 
   def records_params
-    params.permit(:date,:breakfast,:lunch,:dinner,:coffeebreak)
+    params.permit(:date, :breakfast, :lunch, :dinner, :coffeebreak)
   end
 
   def month_date
-    wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
+    wdays = ['(日)', '(月)', '(火)', '(水)', '(木)', '(金)', '(土)']
 
     @todays_date = Date.today
 
@@ -53,7 +47,7 @@ class RecordsController < ApplicationController
       record = @records.map do |record|
         records.push(record) if record.date == @todays_date + x
       end
-      days = { month: (@todays_date + x).month, date:  (@todays_date + x).day, wday: wdays[(@todays_date + x).strftime('%w').to_i], records: records}
+      days = { month: (@todays_date + x).month, date: (@todays_date + x).day, wday: wdays[(@todays_date + x).strftime('%w').to_i], records: records }
       @week_days.push(days)
     end
   end
