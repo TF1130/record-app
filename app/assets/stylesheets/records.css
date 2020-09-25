@@ -1,3 +1,12 @@
+ul {
+  list-style: none;
+  margin-bottom: 0;
+  list-style-position: inside;
+}
+li {
+  list-style: none;
+  margin-bottom: 5px;
+}
 .rec {
   font-size: 30px;
   color: red;
@@ -18,29 +27,31 @@
 
 .date-week {
   height: 5vh;
-  display: flex;
   font-size: 3vh;
-  /* align-items: center; */
-  /* justify-content: center; */
-  /* border-bottom: medium solid rgb(0, 0, 0); */
 }
 
 .record-form {
-  font-size: 10px;
+  font-size: 15px;
   width: 30vw;
-  /* border: solid 1px #666666; */
-  /* display: flex; */
-  /* align-items: baseline; */
-  /* justify-content: space-around; */
 }
 
 .record-main {
-  width: auto;
-  /* border: solid black 1px; */
+  font-size: 13px;
+}
+
+.record-list {
+  background: #eee;
+  border: 1px solid #999;
+  padding: 20px;
+  display: inline-block;
+}
+
+.record-list p {
+  font-weight: bold;
 }
 
 .delete-bottun {
-  background-color: brown;
+  color: #ff0000;
 }
 
 .content {
@@ -49,4 +60,13 @@
   white-space: nowrap;
   overflow: scroll;
   border: darkblue solid 1px;
+}
+
+.dest-rec {
+  background-color: lightgray;
+  text-align: center;
+  font-size: 24px;
+  color: black;
+  margin: 20px 0px;
+  padding: 2vh 10vw;
 }
