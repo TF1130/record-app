@@ -11,12 +11,17 @@ class RecordsController < ApplicationController
     end
 
   end
+
   def update
 
   end
+
   def show
-    @record = Record.show(records_params)
+    @record = Record.new(records_params)
+    @record = Record.find(params[:id])
+
   end
+
   def index
     month_date
     @records = Record.new
@@ -27,6 +32,7 @@ class RecordsController < ApplicationController
     @record.destroy
     redirect_to root_path
   end
+
   private
 
   def records_params
