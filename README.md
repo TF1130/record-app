@@ -1,24 +1,19 @@
-# README
+# オリジナルアプリ「レコーディング/食事管理メモアプリ機能」を作成しました。
+### https://furima-28324.herokuapp.com/
+### 簡易的な操作性を実現する為に、少ないページ数で作成することを目標に実装しました。
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### レコーディング機能
+#### 朝食、昼食、夕食、間食の投稿枠を設けて、都度記録を行う事で忘れずにレコーディングを追加していくようにしました。
+#### 日付をdateメソッドを使用して実装しました。
+#### 
+####
+#### 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## 
+#### 
+### 
+### 
+### 
+### 
+### ※今後の課題や、次回のオリジナルアプリについて
+#### より簡易的な機能性を重視したSPA(シングルページアプリケーション)の実現の為に、JavaScriptを使用して日付を表示したり、カレンダー形式で実装するアプリケーションも作成して行きたいです。
