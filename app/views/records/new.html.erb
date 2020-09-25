@@ -1,5 +1,10 @@
 <h1>新規投稿ページ</h1>
+<%= link_to image_tag("publicdomainq-0036908emc.jpg", class:"rec"), "/" %>
 <%= form_with model: @record, local: true do |f|%>
-  <%= f.text_field :breakfast, placeholder: '入力してください' %>
+  <%= f.text_field :breakfast, placeholder: '朝食を入力してください' %><br>
+  <%= f.text_field :lunch, placeholder: '昼食を入力してください' %><br>
+  <%= f.text_field :dinner, placeholder: '夕飯を入力してください' %><br>
+  <%= f.text_field :coffeebreak, placeholder: '間食を入力してください' %><br>
+
   <%= f.submit '送信'%>
 <% end %>

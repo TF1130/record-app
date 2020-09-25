@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   get 'records/index'
   post 'records/create'
   post 'records/new'
+  get 'record/show'
+
   resources :records
 end
