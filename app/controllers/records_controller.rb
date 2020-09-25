@@ -15,11 +15,11 @@ class RecordsController < ApplicationController
 
   end
   def show
-    @record = Record.edit(records_params)
+    @record = Record.show(records_params)
   end
   def index
     month_date
-    @records = Record.all
+    @records = Record.new
   end
 
   def destroy
@@ -36,15 +36,13 @@ class RecordsController < ApplicationController
   def month_date
     wdays = ['(日)','(月)','(火)','(水)','(木)','(金)','(土)']
 
-    # Dateオブジェクトは、日付を保持しています。下記のように`.today.day`とすると、今日の日付を取得できます。
     @todays_date = Date.today
-    # 例) 今日が2月1日の場合・・・ Date.today.day => 1日
 
     @week_days = []
 
-    @records = Record.where(date: @todays_date..@todays_date + 7)
+    @records = Record.where(date: @todays_date..@todays_date + 14)
 
-    7.times do |x|
+    14.times do |x|
       records = []
       record = @records.map do |record|
         records.push(record) if record.date == @todays_date + x
