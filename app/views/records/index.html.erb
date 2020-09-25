@@ -1,5 +1,5 @@
 <%= link_to image_tag("publicdomainq-0036908emc.jpg", class:"rec"), "/" %>
-<h1>レコーディングダイエット/食事管理アプリ</h1>
+<h1>レコーディング/食事管理メモアプリ</h1>
 <%= form_with model: @record, url: records_path, method: :post,local: true do |f| %>
   <%= f.date_field :date %><br>
   <%# <%= f.text_area :record, placeholder: "入力" %>
