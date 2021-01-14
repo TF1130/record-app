@@ -25,7 +25,7 @@
             <li>間食 <%= record.coffeebreak %></li>
             <li class='delete-bottun'><%= link_to '削除', record_path(record.id), method: :delete %></li>
            </ul>
-            <%# <%= link_to '詳細', record_path(record), method: :get %>
+            <%= link_to '詳細', record_path(record), method: :get %>
           <% end %>
         <% end %>
     </div>
