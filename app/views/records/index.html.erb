@@ -2,7 +2,7 @@
 <h1>レコーディング/食事管理メモアプリ</h1>
 <%= form_with model: @record, url: records_path, method: :post,local: true do |f| %>
   <%= f.date_field :date %><br>
-  <%# <%= f.text_area :record, placeholder: "入力" %>
+  <%= f.text_area :record, placeholder: "入力"
   <%= f.text_area :breakfast, placeholder: "朝食を入力" %>
   <%= f.text_area :lunch, placeholder: "昼食を入力" %>
   <%= f.text_area :dinner, placeholder: "夕食を入力" %>
