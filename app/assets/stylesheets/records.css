@@ -2,6 +2,11 @@ body {
   background-color: rgb(15, 118, 132);
 }
 
+h1 {
+  padding: 10px 15px;
+  background-color: #faf0e6;
+  border-radius: 15px;
+  }
 ul {
   list-style: none;
   margin-bottom: 0;
