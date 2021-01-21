@@ -3,7 +3,7 @@
 ### 簡易的な操作性を実現する為に、少ないページ数で作成することを目標に実装しました。
 
 ### レコーディング機能
-### <img width="761" alt="7cdcb047daf192f35ffb57a7e53f47ae" src="https://user-images.githubusercontent.com/68633955/94228979-2eb42c80-ff39-11ea-84c6-e29785b5550a.png">
+### <img width="761" alt="7cdcb047daf192f35ffb57a7e53f47ae" src="https://raw.githubusercontent.com/TF1130/record-app/1ceace99e6b4689d089915b48dcef131e8483022/record-app-view.png">
 #### 朝食、昼食、夕食、間食の投稿枠を設けて、都度記録を行う事で忘れずにレコーディングを追加していくようにしました。
 #### 日付をdateメソッドを使用して実装しました。
 ###  機能の概要について
