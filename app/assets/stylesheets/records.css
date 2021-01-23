@@ -46,7 +46,7 @@ li {
 
 .record-main {
   font-size: 13px;
-  display: inline-block;
+  display: flex;
   text-align: center;
 }
 
