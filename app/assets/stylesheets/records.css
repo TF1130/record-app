@@ -1,5 +1,8 @@
 body {
   background-color: rgb(24, 188, 210);
+  width: 80%;
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 h1 {
