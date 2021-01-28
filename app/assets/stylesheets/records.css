@@ -63,6 +63,9 @@ li {
 
 .record-list p {
   font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .delete-bottun {
