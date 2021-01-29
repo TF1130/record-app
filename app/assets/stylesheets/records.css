@@ -39,6 +39,12 @@ li {
 .date-week {
   height: 5vh;
   font-size: 3vh;
+  background: #5fc2f5;
+  padding: 4px;
+  text-align: center;
+  color: #FFF;
+  font-weight: bold;
+  letter-spacing: 0.05em;
 }
 
 .record-form {
@@ -48,8 +54,6 @@ li {
 
 .record-main {
   font-size: 13px;
-  display: flex;
-  text-align: center;
 }
 
 .record-list {
@@ -57,16 +61,6 @@ li {
   padding: 0.6em;
   background: #e0edff;
   color:#444;
-  border: 1px solid #999;
-  display: inline-block;
-  width: 150px;
-  height: 50px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  position: absolute;
-  margin: auto;
 }
 
 .record-list p {
