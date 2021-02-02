@@ -36,6 +36,9 @@ li {
 
 .reco {
   margin: 1vh 0;
+  border: 1px solid #aaa;
+  width: 400px;
+  text-align: center;
 }
 
 .form {
