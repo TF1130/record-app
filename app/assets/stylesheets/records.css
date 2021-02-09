@@ -59,8 +59,6 @@ li {
   width: 300px;
   margin: 10px 0;
   padding: 10px;
-  border: 1px solid rgb(36, 97, 230);
-  position: relative;
   display: table-cell;
 }
 
@@ -77,9 +75,6 @@ li {
 
 .record-list p {
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .delete-bottun {
