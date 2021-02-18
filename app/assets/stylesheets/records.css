@@ -64,6 +64,9 @@ li {
 
 .record-main {
   font-size: 13px;
+  width: calc(60% - 40px);
+  min-width: 500px;
+  max-width: 600px;
 }
 
 .record-list {
